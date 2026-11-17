@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.php diff=php
+*.blade.php diff=html
+*.{png,jpg,jpeg,gif,ico,webp,pdf,docx,woff,woff2} binary

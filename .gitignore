@@ -1,0 +1,32 @@
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+
+# Environment files (never commit secrets)
+.env
+.env.*
+!.env.example
+
+# Backend (Laravel has its own backend/.gitignore as well)
+backend/vendor/
+backend/storage/*.key
+backend/.phpunit.result.cache
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/coverage/
+frontend/test-results/
+frontend/playwright-report/
+frontend/*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Local curl session from scripts/api-login.sh
+cookies.txt
