@@ -30,3 +30,6 @@ npm-debug.log*
 
 # Local curl session from scripts/api-login.sh
 cookies.txt
+
+# Screenshots exported by Claude
+Claude outputs/
