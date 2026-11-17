@@ -2,7 +2,7 @@
 
 HireFlow is a multi-tenant Applicant Tracking System (ATS). Companies use it to run their whole recruitment process: publishing jobs, collecting applications, running a configurable hiring pipeline, scheduling interviews, collecting interviewer feedback, and issuing offers. Each company's data is kept strictly separate.
 
-> **Status:** Phases 1–5 (foundation, auth & multi-tenancy, jobs, candidates & applications, interviews, offers & candidate portal) written. The backend test suite still has to be run locally. Phase 6 (dashboard, analytics & notifications) is next. See [`docs/CHECKLIST.md`](docs/CHECKLIST.md).
+> **Status:** Phases 1–5 (foundation, auth & multi-tenancy, jobs, candidates & applications, interviews, offers & candidate portal) written. Phase 6 (dashboard, analytics & notifications) is next. See [`docs/CHECKLIST.md`](docs/CHECKLIST.md).
 
 ## Stack
 
@@ -10,7 +10,7 @@ HireFlow is a multi-tenant Applicant Tracking System (ATS). Companies use it to 
 |---|---|
 | Backend | Laravel 13 · PHP 8.3+ · MySQL 8 · Sanctum (SPA cookies) · Fortify · Spatie Permission (teams) |
 | Frontend | React 19 · TypeScript · Vite · Ant Design 6 · Tailwind CSS 4 · TanStack Query · Zustand · React Hook Form + Zod · Recharts |
-| Quality | PHPUnit · Vitest · Playwright · GitHub Actions |
+| Quality | ESLint · Prettier · Pint · GitHub Actions |
 
 ## Repository layout
 
@@ -49,24 +49,6 @@ After `php artisan migrate --seed` (non-production only), every account uses the
 | Candidate portal | candidate@example.test |
 
 Globex Health uses the same addresses at `@globex.test`.
-
-## Screenshots
-
-| Interview & feedback | Candidate portal |
-|---|---|
-| ![Interview](docs/screenshots/interview.png) | ![Candidate portal](docs/screenshots/candidate-portal.png) |
-
-| Pipeline board | Application |
-|---|---|
-| ![Pipeline](docs/screenshots/pipeline.png) | ![Application](docs/screenshots/application.png) |
-
-| Jobs | Job detail |
-|---|---|
-| ![Jobs](docs/screenshots/jobs.png) | ![Job detail](docs/screenshots/job-detail.png) |
-
-| Public careers page | Team members |
-|---|---|
-| ![Careers](docs/screenshots/careers.png) | ![Team members](docs/screenshots/team-members.png) |
 
 ## Documentation
 
